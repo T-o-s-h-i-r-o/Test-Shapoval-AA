@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 648px);
+    padding-right: calc(50% - 648px);
+}
+
+a {
+    text-decoration: none;
+}
+
+.top {
+
+    &__header {
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__menu {
+        display: flex;
+
+        &_links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        &_link {
+            color: #666666;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__data {
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    &__map-navigator {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+        &_link {
+            color: #666666;
+        }
+    }
+
+    &__map {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__navigator {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__time {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &_text {
+            color: #666666;
+        }
+    }
+}
+
+.order {
+    margin-left: 56px;
+    height: 40px;
+    width: 204px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FBFBFB;
+    background: #0B457F;
+    border-radius: 12px;
+    transition: all 0.4s;
+
+    &:hover {
+        background: #006CD8;
+    }
+}
+
+.line {
+    position: absolute;
+    border-top: 0.5px solid #CECECE;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.15);
+    height: 42px;
+    width: 100%;
+    margin-top: 64px;
+    position: absolute;
+}
