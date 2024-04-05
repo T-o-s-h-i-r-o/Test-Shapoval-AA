@@ -70,12 +70,20 @@ a {
         display: flex;
         align-items: center;
         gap: 8px;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     &__navigator {
         display: flex;
         align-items: center;
         gap: 8px;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     &__time {
@@ -89,6 +97,13 @@ a {
     }
 }
 
+.line {
+    border-top: 0.5px solid #CECECE;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.15);
+    height: 42px;
+    width: 100%;
+}
+
 .order {
     margin-left: 56px;
     height: 40px;
@@ -100,18 +115,101 @@ a {
     background: #0B457F;
     border-radius: 12px;
     transition: all 0.4s;
+    border: none;
 
     &:hover {
         background: #006CD8;
     }
 }
 
-.line {
-    position: absolute;
-    border-top: 0.5px solid #CECECE;
-    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.15);
-    height: 42px;
-    width: 100%;
-    margin-top: 64px;
-    position: absolute;
+.main {
+
+    &__title {
+        margin-top: 56px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #3E3E3E;
+    }
+
+    &__product-box {
+        margin-top: 30px;
+        display: flex;
+        gap: 12px;
+        color: #FFFFFF;
+    }
+
+    &__product-content {
+        height: 512px;
+        width: 424px;
+        box-sizing: border-box;
+        padding: 32px;
+
+        &_block {
+            height: 250px;
+            width: 424px;
+            box-sizing: border-box;
+            padding: 32px;
+        }
+
+        &_style {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 12px;
+        }
+
+        &_1 {
+            background-image: url(img/background-left.jpg);
+        }
+
+        &_2 {
+            background-image: url(img/background-up.jpg);
+        }
+
+        &_3 {
+            background-image: url(img/background-down.jpg);
+        }
+
+        &_4 {
+            background-image: url(img/background-right.jpg);
+        }
+    }
+
+    &__product-content-duo {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__table {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        padding-top: 12px;
+    }
+
+    &__button {
+        margin-top: 32px;
+        height: 45px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        border-radius: 8px;
+        transition: all 0.4s;
+        background: none;
+        border: 1px solid #FFFFFF;
+        padding: 14px 28px 14px 28px;
+    
+        &:hover {
+            background: #BFBFBF;
+        }
+    }
 }

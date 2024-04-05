@@ -61,10 +61,16 @@ a {
   align-items: center;
   gap: 8px;
 }
+.top__map:hover {
+  text-decoration: underline;
+}
 .top__navigator {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+.top__navigator:hover {
+  text-decoration: underline;
 }
 .top__time {
   display: flex;
@@ -73,6 +79,13 @@ a {
 }
 .top__time_text {
   color: #666666;
+}
+
+.line {
+  border-top: 0.5px solid #CECECE;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.15);
+  height: 42px;
+  width: 100%;
 }
 
 .order {
@@ -86,17 +99,84 @@ a {
   background: #0B457F;
   border-radius: 12px;
   transition: all 0.4s;
+  border: none;
 }
 .order:hover {
   background: #006CD8;
 }
 
-.line {
-  position: absolute;
-  border-top: 0.5px solid #CECECE;
-  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.15);
-  height: 42px;
-  width: 100%;
-  margin-top: 64px;
-  position: absolute;
+.main__title {
+  margin-top: 56px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #3E3E3E;
+}
+.main__product-box {
+  margin-top: 30px;
+  display: flex;
+  gap: 12px;
+  color: #FFFFFF;
+}
+.main__product-content {
+  height: 512px;
+  width: 424px;
+  box-sizing: border-box;
+  padding: 32px;
+}
+.main__product-content_block {
+  height: 250px;
+  width: 424px;
+  box-sizing: border-box;
+  padding: 32px;
+}
+.main__product-content_style {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+}
+.main__product-content_1 {
+  background-image: url(img/background-left.jpg);
+}
+.main__product-content_2 {
+  background-image: url(img/background-up.jpg);
+}
+.main__product-content_3 {
+  background-image: url(img/background-down.jpg);
+}
+.main__product-content_4 {
+  background-image: url(img/background-right.jpg);
+}
+.main__product-content-duo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.main__table {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+.main__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 12px;
+}
+.main__button {
+  margin-top: 32px;
+  height: 45px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  border-radius: 8px;
+  transition: all 0.4s;
+  background: none;
+  border: 1px solid #FFFFFF;
+  padding: 14px 28px 14px 28px;
+}
+.main__button:hover {
+  background: #BFBFBF;
 }/*# sourceMappingURL=style.css.map */
