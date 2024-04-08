@@ -24,9 +24,10 @@ a {
         align-items: center;
         justify-content: space-between;
     }
-
+    
     &__menu {
         display: flex;
+        gap: 24px;
 
         &_links {
             display: flex;
@@ -44,6 +45,28 @@ a {
                 text-decoration: underline;
             }
         }
+    }
+
+    &__order {
+        margin-left: 56px;
+        height: 40px;
+        width: 204px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: #FBFBFB;
+        background: #0B457F;
+        border-radius: 12px;
+        transition: all 0.4s;
+        border: none;
+    
+        &:hover {
+            background: #006CD8;
+        }
+    }
+
+    &__menu-laptop {
+        display: none;
     }
 
     &__data {
@@ -104,24 +127,6 @@ a {
     width: 100%;
 }
 
-.order {
-    margin-left: 56px;
-    height: 40px;
-    width: 204px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-    color: #FBFBFB;
-    background: #0B457F;
-    border-radius: 12px;
-    transition: all 0.4s;
-    border: none;
-
-    &:hover {
-        background: #006CD8;
-    }
-}
-
 .main {
 
     &__title {
@@ -137,6 +142,7 @@ a {
         display: flex;
         gap: 12px;
         color: #FFFFFF;
+        height: 100%;
     }
 
     &__product-content {
@@ -173,6 +179,10 @@ a {
 
         &_4 {
             background-image: url(img/background-right.jpg);
+        }
+
+        &_laptop {
+            display: none;
         }
     }
 
@@ -213,3 +223,5 @@ a {
         }
     }
 }
+
+@import 'laptop';

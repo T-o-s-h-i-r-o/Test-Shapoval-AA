@@ -24,6 +24,7 @@ a {
 }
 .top__menu {
   display: flex;
+  gap: 24px;
 }
 .top__menu_links {
   display: flex;
@@ -38,6 +39,25 @@ a {
 }
 .top__menu_link:hover {
   text-decoration: underline;
+}
+.top__order {
+  margin-left: 56px;
+  height: 40px;
+  width: 204px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FBFBFB;
+  background: #0B457F;
+  border-radius: 12px;
+  transition: all 0.4s;
+  border: none;
+}
+.top__order:hover {
+  background: #006CD8;
+}
+.top__menu-laptop {
+  display: none;
 }
 .top__data {
   height: 42px;
@@ -88,23 +108,6 @@ a {
   width: 100%;
 }
 
-.order {
-  margin-left: 56px;
-  height: 40px;
-  width: 204px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  color: #FBFBFB;
-  background: #0B457F;
-  border-radius: 12px;
-  transition: all 0.4s;
-  border: none;
-}
-.order:hover {
-  background: #006CD8;
-}
-
 .main__title {
   margin-top: 56px;
   font-weight: 500;
@@ -117,6 +120,7 @@ a {
   display: flex;
   gap: 12px;
   color: #FFFFFF;
+  height: 100%;
 }
 .main__product-content {
   height: 512px;
@@ -147,6 +151,9 @@ a {
 }
 .main__product-content_4 {
   background-image: url(img/background-right.jpg);
+}
+.main__product-content_laptop {
+  display: none;
 }
 .main__product-content-duo {
   display: flex;
@@ -179,4 +186,55 @@ a {
 }
 .main__button:hover {
   background: #BFBFBF;
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .center {
+    padding-left: calc(50% - 426px);
+    padding-right: calc(50% - 426px);
+  }
+  .top__menu_links {
+    display: none;
+  }
+  .top__order {
+    margin: 0;
+  }
+  .top__menu-laptop {
+    display: flex;
+  }
+  .main__product-box {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .main__product-content {
+    height: 233px;
+    width: 420px;
+  }
+  .main__product-content-duo {
+    display: none;
+  }
+  .main__product-content_laptop {
+    display: block;
+  }
+  .main__product-content_1 {
+    background-image: url(img/background-laptop.png);
+  }
+  .main__product-content_2 {
+    background-image: url(img/background-laptop.png);
+  }
+  .main__product-content_3 {
+    background-image: url(img/background-laptop.png);
+  }
+  .main__product-content_4 {
+    background-image: url(img/background-laptop.png);
+  }
+  .main__product-content_style {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .main__button {
+    margin: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

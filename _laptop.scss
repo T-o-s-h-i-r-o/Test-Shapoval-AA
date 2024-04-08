@@ -1,0 +1,70 @@
+@media (min-width: 900px) and (max-width: 1199px) {
+
+    .center {
+        padding-left: calc(50% - 426px);
+        padding-right: calc(50% - 426px);
+    }
+
+    .top {
+
+        &__menu_links {
+            display: none;
+        }
+
+        &__order {
+            margin: 0;
+        } 
+
+        &__menu-laptop {
+            display: flex;
+        }
+    }
+
+    .main {
+
+        &__product-box {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        &__product-content {
+            height: 233px;
+            width: 420px;
+
+            &-duo {
+                display: none;
+            }
+
+            &_laptop {
+                display: block;
+            }
+
+            &_1 {
+                background-image: url(img/background-laptop.png);
+            }
+    
+            &_2 {
+                background-image: url(img/background-laptop.png);
+            }            
+    
+            &_3 {
+                background-image: url(img/background-laptop.png);
+            }
+    
+            &_4 {
+                background-image: url(img/background-laptop.png);
+            }
+
+            &_style {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+        }
+
+        &__button {
+            margin: 0;
+        }
+    }
+}
