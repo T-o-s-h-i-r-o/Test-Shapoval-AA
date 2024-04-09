@@ -124,7 +124,6 @@ a {
     border-top: 0.5px solid #CECECE;
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.15);
     height: 42px;
-    width: 100%;
 }
 
 .main {
@@ -225,3 +224,5 @@ a {
 }
 
 @import 'laptop';
+@import 'tablet';
+@import 'mobile';
